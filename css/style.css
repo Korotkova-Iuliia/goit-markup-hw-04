@@ -228,6 +228,21 @@ header {
   text-align: left;
   color: var(--color-title);
 }
+.the-best-icon {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+/* .the-best-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: #ffffff;
+} */
 
 /* ===== section we do ===== */
 .section-we-do {
@@ -294,6 +309,34 @@ header {
   color: var(--color-title);
 }
 
+.soc {
+  display: flex;
+  padding-right: 32px;
+  padding-left: 32px;
+  justify-content: space-between;
+}
+
+.soc-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.soc-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: #ffffff;
+}
+
+.soc-list-link:hover,
+.soc-list-link:focus {
+  fill: #ffffff;
+  background-color: var(--color-accent);
+}
 /* ===== portfolio ===== */
 
 .portfolio-button-menu {
