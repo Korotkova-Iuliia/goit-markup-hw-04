@@ -229,6 +229,7 @@ header {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-align: left;
   color: var(--color-title);
 }
@@ -305,6 +306,7 @@ header {
 }
 
 .team-txt {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -313,6 +315,7 @@ header {
   color: var(--color-txt);
 }
 .team-name {
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.9;
   font-weight: 500;
@@ -357,28 +360,32 @@ header {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .customers-li {
+  display: flex;
   flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
   margin-left: var(--card-set-gap);
+  height: 92px;
+  align-items: center;
 }
 
-.customers-box-hover:hover,
-.customers-box-hover:focus {
-  fill: var(--color-accent);
-}
-
-.customers-box {
+.customers-li-link {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+
+.customers-li-link:hover,
+.customers-li-link:focus {
+  fill: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
 .customers-icon {
   display: flex;
-  width: 106px;
-  height: 60px;
-  fill: var(--color-accent);
 }
 
 /* ===== portfolio ===== */
@@ -466,13 +473,23 @@ header {
 }
 
 /* footer */
-footer {
+.section-footer {
   background: var(--background-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.container-footer {
+  align-items: baseline;
+  display: flex;
+}
+
+.adress-footer-box {
+  margin-right: 70px;
+}
+
 .logo-footer {
+  display: flex;
   margin-bottom: 20px;
 }
 
@@ -513,4 +530,32 @@ footer {
 .contact:hover,
 .contact:focus {
   color: var(--color-accent);
+}
+
+.footer-soc-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+}
+.footer-soc-ul {
+  display: flex;
+}
+footer .soc-list:not(:last-child) {
+  margin-right: 10px;
+}
+.soc-list-link-footer {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.soc-list-link:hover,
+.soc-list-link:focus {
+  fill: #ffffff;
+  background-color: var(--color-accent);
 }
