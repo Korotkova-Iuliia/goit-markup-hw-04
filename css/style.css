@@ -135,20 +135,24 @@ header {
   margin-left: auto;
 }
 .mail-contact {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
 }
 
 .menu-contact {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--color-menu-contakt);
+  fill: var(--color-menu-contakt);
 }
 .svg-contact {
-  width: 16px;
-  height: 12px;
+  margin-right: 10px;
 }
 
 .menu-list:hover,
@@ -156,6 +160,7 @@ header {
 .menu-contact:hover,
 .menu-contact:focus {
   color: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 /* ===== hero ===== */
@@ -413,20 +418,13 @@ header {
   border: none;
   cursor: pointer;
 }
+
 .portfolio-button:hover,
 .portfolio-button:focus {
-  padding: 6px 22px;
-
-  font-family: var(--main-font);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-align: center;
   color: #ffffff;
   background-color: var(--color-accent);
-  border: none;
-  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button-li:not(:first-child) {
@@ -443,10 +441,19 @@ header {
 }
 
 .portfolio-card {
-  background: #ffffff;
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 3);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.portfolio-card-link {
+  display: block;
+  background: #ffffff;
+}
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-content {
@@ -455,6 +462,7 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  text-decoration: none;
 }
 .card-title {
   margin-bottom: 4px;
@@ -470,6 +478,7 @@ header {
   font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--color-txt);
 }
 
 /* footer */
